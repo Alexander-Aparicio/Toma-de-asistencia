@@ -2,7 +2,6 @@ import Charts from "../components/home/charts.js"
 import alumnosDb from "../data/db.js"
 import hookGrafica from "../helpers/hookGrafica.js"
 
-
 const hookGallery = (idGallery)=> {
 
     const d = document
@@ -47,7 +46,6 @@ const hookGallery = (idGallery)=> {
 
                 const idCanva = Charts().dataset.id
                 hookGrafica(idCanva, `${caballeros.length}`,`${damas.length}`)
-
             } else {
 
                 if(window.confirm('Volverá al estado inicial.')) {

@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom: solid 1px #0001;
+    color: aliceblue;
+    background-color: var(--bg-primary);
+    font-family: var(--font);
+
+    .name {
+        color: var(--color-text);
+        font-weight: bold;
+    }
+}

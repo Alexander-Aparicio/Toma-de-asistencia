@@ -1,0 +1,36 @@
+
+const hookGrafica = (id, man, women)=> {
+
+    const ctx = document.getElementById(id);
+
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: [
+                'Mujeres',
+                'Varones',
+              ],
+              datasets: [{
+                label: 'My First Dataset',
+                data: [women, man],
+                backgroundColor: [
+                  'rgb(255, 99, 132)',
+                  'rgb(54, 162, 235)',
+                ],
+                hoverOffset: 4
+              }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+   
+    console.log(myChart)
+     
+}
+
+export default hookGrafica

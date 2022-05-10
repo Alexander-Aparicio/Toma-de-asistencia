@@ -1,0 +1,19 @@
+{
+  "name": "revolution",
+  "version": "1.0.0",
+  "description": " Revolution Sports ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch app/sass/styles.scss app/css/styles.css"
+  },
+  "keywords": [
+    "Deportes"
+  ],
+  "author": "Alexander Aparicio Meza R.",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}

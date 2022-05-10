@@ -1,0 +1,23 @@
+@mixin h1 {
+    margin: 10px 0px;
+    font-size: 30px;
+    text-align: center;
+    font-family: var(--font);
+}
+
+@mixin p {
+    margin: 10px 0px;
+    font-size: 20px;
+    text-align: left;
+    font-family: var(--font);
+}
+
+@mixin card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 9px;
+}

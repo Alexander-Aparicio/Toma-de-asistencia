@@ -1,0 +1,122 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.0666666667);
+  color: aliceblue;
+  background-color: var(--bg-primary);
+  font-family: var(--font);
+}
+.header .name {
+  color: var(--color-text);
+  font-weight: bold;
+}
+
+.home__main {
+  padding: 25px 6%;
+  color: var(--color-text);
+}
+.home__main .h1 {
+  margin: 10px 0px;
+  font-size: 30px;
+  text-align: center;
+  font-family: var(--font);
+}
+.home__main .indicaciones {
+  margin: 10px 0px;
+  font-size: 20px;
+  text-align: left;
+  font-family: var(--font);
+}
+.home__main .datos {
+  margin: 10px 0px;
+  font-size: 20px;
+  text-align: left;
+  font-family: var(--font);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 25px);
+  justify-items: center;
+  line-height: 1.5;
+  margin: 25px auto 35px auto;
+}
+.home__main .gallery {
+  width: 100%;
+  margin-top: 25px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
+  grid-gap: 25px;
+}
+@media (min-width: 450px) {
+  .home__main .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 220px));
+  }
+}
+.home__main .gallery .card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 9px;
+}
+.home__main .gallery .card .imagen {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  filter: saturate(0.3);
+  border: solid 2px rgba(0, 0, 0, 0.3333333333);
+}
+.home__main .gallery .card .check {
+  filter: saturate(1);
+  border: solid 2px var(--bg-primary);
+}
+.home__main .gallery .card .description {
+  font-family: var(--font-card);
+  font-weight: bold;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-text);
+}
+.home__main .gallery .card .description .state {
+  font-size: 1.2rem;
+  color: var(--bg-primary);
+}
+
+.chart {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font: "Lato", sans-serif;
+  --font-card: "Noto Sans", sans-serif;
+  --bg-primary: #eed269;
+  --bg-secundary: #fff;
+  --color-text: #28292c;
+  --mobile: 450px;
+  --mini-tablet: 700px;
+  --tablet:1000px;
+  --latop:1200px;
+}
+
+.app {
+  font-family: var(--font);
+  color: var(--color-text);
+}
+
+/*# sourceMappingURL=styles.css.map */

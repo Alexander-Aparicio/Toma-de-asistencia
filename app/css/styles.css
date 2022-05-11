@@ -12,11 +12,14 @@
 .header .name {
   color: var(--color-text);
   font-weight: bold;
+  font-size: x-large;
 }
 
 .home__main {
   padding: 25px 6%;
   color: var(--color-text);
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
 .home__main .h1 {
   margin: 10px 0px;
@@ -85,6 +88,10 @@
 .home__main .gallery .card .description .state {
   font-size: 1.2rem;
   color: var(--bg-primary);
+}
+
+.home__main .card:hover{
+  box-shadow: 3px 3px red, -1em 0 0.4em olive;
 }
 
 .chart {

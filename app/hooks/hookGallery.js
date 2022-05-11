@@ -36,7 +36,7 @@ const hookGallery = (idGallery)=> {
 
                 registro.push(presente[0])
 
-                presentes.textContent = `Presentes: ${registro.length}`
+                presentes.textContent = `Asistieron: ${registro.length}`
                 presente[0].gender === 'femenino' 
                 ? damas.push(presente[0]) 
                 :caballeros.push(presente[0]) 

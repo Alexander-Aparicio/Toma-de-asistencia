@@ -19,7 +19,7 @@ const alumnosDb = [
             gender:"femenino",
             id:"a02",
             state:"Ausente",
-            foto:'https://images.generated.photos/cS_0Vcm8iMUdbV2CGerbjzM7G-ebE1MOzAsPsiXAojI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MTQ3MTY2LmpwZw.jpg'
+            foto:"https://images.generated.photos/F5bZjxNx1e3D4-Kuv3Lf9_na0ZN972v4rhS2rVYXXs0/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NDkwNDUwLmpwZw.jpg"
         },
         {
             name: "Hugo",
@@ -51,8 +51,8 @@ const alumnosDb = [
             paymentdate:19,
             gender:"femenino",
             id:"a05",
-            state:"Ausente",
-            foto:"https://images.generated.photos/F5bZjxNx1e3D4-Kuv3Lf9_na0ZN972v4rhS2rVYXXs0/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NDkwNDUwLmpwZw.jpg"
+            state:"Ausente",            
+            foto:'https://images.generated.photos/cS_0Vcm8iMUdbV2CGerbjzM7G-ebE1MOzAsPsiXAojI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/MTQ3MTY2LmpwZw.jpg'
         },
         {
             name: "Jorge",
@@ -85,7 +85,7 @@ const alumnosDb = [
             gender:"femenino",
             id:"a08",
             state:"Ausente",
-            foto:'https://images.generated.photos/EaSZKzOQNBmupqrG2b4blf0ALuRQI4OWOfQhtuoYA1k/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NzY0MjExLmpwZw.jpg'
+            foto:'https://images.generated.photos/n01JE4YnZ5tmOIrpVpRYoIGwLgB8xrwTOnL3LxBtkB8/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTc3Mjk5LmpwZw.jpg'            
         },
         {
             name: "Brian",
@@ -96,7 +96,7 @@ const alumnosDb = [
             gender:"masculino",
             id:"a09",
             state:"Ausente",
-            foto:'https://images.generated.photos/cDCmIK4ojGbVXQxLlRd2nLSOroTR_a3UWPPq13P59Bg/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTA5MDg0LmpwZw.jpg'
+            foto:'https://images.generated.photos/6AGS6BEYX9Gn9rOXu5eVQXeI4ll8_K2tFR7Up5H2DVY/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/OTIyMDg3LmpwZw.jpg'
         },
         {
             name: "Brenda",
@@ -106,8 +106,8 @@ const alumnosDb = [
             paymentdate:15,
             gender:"femenino",
             id:"a10",
-            state:"Ausente",
-            foto:'https://images.generated.photos/n01JE4YnZ5tmOIrpVpRYoIGwLgB8xrwTOnL3LxBtkB8/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NTc3Mjk5LmpwZw.jpg'
+            state:"Ausente",            
+            foto:'https://images.generated.photos/EaSZKzOQNBmupqrG2b4blf0ALuRQI4OWOfQhtuoYA1k/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NzY0MjExLmpwZw.jpg'
         },
         {
             name: "Carlos",
@@ -132,7 +132,7 @@ const alumnosDb = [
             foto:'https://images.generated.photos/QJMl5kDpUnX0_9UTeAx2vijusAgB1Ce6ju1VXS8FUQM/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NDUyNjE2LmpwZw.jpg'
         },
         {
-            name: "Mayumi",
+            name: "Carine",
             surname:"Meza Roque",
             age:32,
             schedule:"A",

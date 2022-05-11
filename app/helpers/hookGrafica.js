@@ -23,6 +23,15 @@ const hookGrafica = (id, man, women) => {
             beginAtZero: true,
           },
         },
+        plugins: {
+          legend: {
+              labels: {
+                  font: {
+                      size: 18
+                  }
+              }
+          }
+      }
       },
     });  
   console.log(myChart); 

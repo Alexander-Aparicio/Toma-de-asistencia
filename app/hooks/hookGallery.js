@@ -1,4 +1,4 @@
-import Charts from "../components/home/charts.js"
+import Charts from "../components/home/Charts.js"
 import alumnosDb from "../data/db.js"
 import hookGrafica from "../helpers/hookGrafica.js"
 

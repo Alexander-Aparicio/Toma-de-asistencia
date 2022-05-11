@@ -14,7 +14,7 @@ const Home = ()=> {
     main.setAttribute('class','home__main')
 
     webSite.appendChild(main)
-    main.appendChild(Title())
+    /* main.appendChild(Title()) */
     main.appendChild(Text())
     main.appendChild(Info())
     main.appendChild(Gallery())

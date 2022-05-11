@@ -1,4 +1,4 @@
-import Charts from "../components/home/charts.js"
+import Charts from "../components/home/Charts.js"
 import Gallery from "../components/home/Gallery.js"
 import Info from "../components/home/Info.js"
 import Text from "../components/home/Text.js"

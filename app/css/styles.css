@@ -73,12 +73,11 @@
   border: solid 11px rgb(0 0 0 / 7%);
 }
 .home__main .gallery .card .check {
-  filter: saturate(1);
-  border: solid 2px var(--bg-primary);
+  filter: grayscale(0);
+  border: solid 11px var(--bg-primary);
 }
 .home__main .gallery .card .description {
   font-family: var(--font-card);
-  font-weight: bold;
   text-align: center;
   font-size: 0.8rem;
   color: var(--color-text);
@@ -87,13 +86,16 @@
   font-size: 1.2rem;
   color: var(--bg-primary);
 }
+.home__main .gallery .card .description .present {  
+  font-weight: bold;
+}
 
 .chart {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 700px;
+  max-width: 500px;
   margin: 5rem auto;  
 }
 

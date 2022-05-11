@@ -10,7 +10,7 @@ const hookGallery = (idGallery)=> {
     let damas = []
     
     d.getElementById(`${idGallery}`).addEventListener('click', (e)=>{   
-
+console.log(e);
         console.log(e.target.tagName)
 
         if( e.target.tagName === 'IMG' ) {
@@ -29,6 +29,7 @@ const hookGallery = (idGallery)=> {
             if(state === 'Ausente') {
 
                 el.textContent = 'Presente'
+                el.classList.toggle('present');
 
                 e.target.classList.toggle('check')
 
@@ -37,9 +38,9 @@ const hookGallery = (idGallery)=> {
                 registro.push(presente[0])
 
                 presentes.textContent = `Asistieron: ${registro.length}`
-                presente[0].gender === 'femenino' 
-                ? damas.push(presente[0]) 
-                :caballeros.push(presente[0]) 
+                presente[0].gender === 'femenino'
+                ? damas.push(presente[0])
+                :caballeros.push(presente[0])
 
                 hombres.textContent = `Varones: ${caballeros.length}`
                 mujeres.textContent = `Mujeres: ${damas.length}`

@@ -30,6 +30,13 @@ const hookGrafica = (id, man, women) => {
                       size: 18
                   }
               }
+          },
+          title: {
+            display: true,
+            text: 'Asistencia',
+            font:{
+              size: 18
+            }
           }
       }
       },

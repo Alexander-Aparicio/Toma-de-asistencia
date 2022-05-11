@@ -47,31 +47,38 @@ console.log(e);
 
                 const idCanva = Charts().dataset.id
                 hookGrafica(idCanva, `${caballeros.length}`,`${damas.length}`)
-            } else {
-
-                if(window.confirm('Volverá al estado inicial.')) {
-
-                    el.textContent = 'Ausente'
-                    e.target.classList.toggle('check')
-                    
-                    registro = registro.filter((el)=>{
-                        return el.id !== id
-                    })
-
-                    damas = damas.filter((el)=>{
-                        return el.id !== id
-                    })
-
-                    caballeros = caballeros.filter((el)=>{
-                        return el.id !== id
-                    })
-
-                    console.log(registro.length)
-                    presentes.textContent = `Presentes: ${registro.length}`
-                    hombres.textContent = `Varones: ${caballeros.length}`
-                    mujeres.textContent = `Mujeres: ${damas.length}`
-
-                }
+            } else {               
+                Swal.fire({
+                    title: 'Desea volver a su estado Ausente?',
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Sí, volver!',
+                    cancelButtonText: 'Cancelar'
+                  }).then((result) => {
+                    if (result.isConfirmed) {
+                        el.textContent = 'Ausente'
+                        e.target.classList.toggle('check')
+                        
+                        registro = registro.filter((el)=>{
+                            return el.id !== id
+                        })
+    
+                        damas = damas.filter((el)=>{
+                            return el.id !== id
+                        })
+    
+                        caballeros = caballeros.filter((el)=>{
+                            return el.id !== id
+                        })
+    
+                        console.log(registro.length)
+                        presentes.textContent = `Presentes: ${registro.length}`
+                        hombres.textContent = `Varones: ${caballeros.length}`
+                        mujeres.textContent = `Mujeres: ${damas.length}`
+                    }
+                  })
             }
         }
      

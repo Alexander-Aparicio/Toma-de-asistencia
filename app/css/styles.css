@@ -1,3 +1,7 @@
+body {
+  font-family: "Lato", sans-serif; 
+}
+
 .header {
   display: flex;
   width: 100%;
@@ -72,9 +76,14 @@
   filter: grayscale(1);
   border: solid 11px rgb(0 0 0 / 7%);
 }
+.home__main .gallery .card .imagen:hover {
+  filter: grayscale(0);
+  box-shadow: 0px 0px 7px -5px rgba(133,148,163);
+}
 .home__main .gallery .card .check {
   filter: grayscale(0);
   border: solid 11px var(--bg-primary);
+  box-shadow: 0px 0px 7px -5px #a39d85;
 }
 .home__main .gallery .card .description {
   font-family: var(--font-card);
@@ -87,7 +96,7 @@
   color: var(--bg-primary);
 }
 .home__main .gallery .card .description .present {  
-  font-weight: bold;
+  font-weight: bold;  
 }
 
 .chart {

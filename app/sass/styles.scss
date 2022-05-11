@@ -1,24 +1,6 @@
+@use 'variables';
+@use 'reset';
 @use 'header';
 @use 'main-home';
 @use 'footer';
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-:root {
-    --font: 'Lato', sans-serif;
-    --font-card: 'Noto Sans', sans-serif;
-    --bg-primary: #eed269;
-    --bg-secundary: #fff;
-    --color-text: #28292c;
-    --mobile: 450px;
-    --mini-tablet: 700px;
-    --tablet:1000px;
-    --latop:1200px;  
-}
-.app {
-    font-family: var(--font);
-    color: var(--color-text);
-}

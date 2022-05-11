@@ -7,29 +7,29 @@ const Info = ()=> {
     console.log(elements)
     const datos = createElement('ul','datos')
 
-    const totalInvitados = createElement('i', 'dato')
+    const totalInvitados = createElement('li', 'dato')
     totalInvitados.setAttribute('id','total-invitados')
-    totalInvitados.textContent = `Total Participantes: ${alumnosDb.length}` 
+    totalInvitados.textContent = `Total Invitados: ${alumnosDb.length}` 
 
-    const totalVarones = createElement('i', 'dato')
+    const totalVarones = createElement('li', 'dato')
     totalVarones.setAttribute('id','total-varones')
-    totalVarones.textContent = `Total Varones: 
+    totalVarones.textContent = `Varones: 
     ${alumnosDb.filter((el)=> el.gender ==='masculino').length}`
 
-    const totalMujeres = createElement('i', 'dato')
+    const totalMujeres = createElement('li', 'dato')
     totalMujeres.setAttribute('id','total-damas')
-    totalMujeres.textContent = `Total Mujeres: 
+    totalMujeres.textContent = `Mujeres: 
     ${alumnosDb.filter((el)=> el.gender ==='femenino').length}`
 
-    const presentes = createElement('i', 'dato')
+    const presentes = createElement('li', 'dato presentes')
     presentes.setAttribute('id','presentes')
     presentes.textContent = `Asistieron: 0`
 
-    const hombresPresentes = createElement('i', 'dato')
+    const hombresPresentes = createElement('li', 'dato varones')
     hombresPresentes.setAttribute('id','varones')
     hombresPresentes.textContent = `Varones: 0`
 
-    const mujeresPresentes = createElement('i', 'dato')
+    const mujeresPresentes = createElement('li', 'dato mujeres')
     mujeresPresentes.setAttribute('id','mujeres')
     mujeresPresentes.textContent = `Mujeres: 0`
 

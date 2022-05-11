@@ -5,11 +5,10 @@ const Charts = ()=> {
     const grafica = createElement('figure','chart')
     grafica.setAttribute('data-id','myChart')
 
-
-    const canvas = `<canvas id="myChart" width="400" height="400"></canvas>`
+    const canvas = `<canvas id="myChart" width="500" height="500"></canvas>`
 
     grafica.innerHTML = canvas
-
+    
     return grafica
 
 }

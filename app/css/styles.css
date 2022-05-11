@@ -1,5 +1,19 @@
-body {
-  font-family: "Lato", sans-serif; 
+:root {
+  --font: "Lato", sans-serif;
+  --font-card: "Noto Sans", sans-serif;
+  --bg-primary: #eed269;
+  --bg-secundary: #fff;
+  --color-text: #28292c;
+  --mobile: 450px;
+  --mini-tablet: 700px;
+  --tablet:1000px;
+  --latop:1200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -7,12 +21,11 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  height: 50px;
   border-bottom: solid 1px rgba(0, 0, 0, 0.0666666667);
   color: aliceblue;
   background-color: var(--bg-primary);
   font-family: var(--font);
-  font-size: 2rem;
 }
 .header .name {
   color: var(--color-text);
@@ -22,6 +35,15 @@ body {
 .home__main {
   padding: 25px 6%;
   color: var(--color-text);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "indicaciones" "datos" "chart" "gallery";
+}
+@media (min-width: 700px) {
+  .home__main {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "indicaciones indicaciones" "datos datos" "chart gallery" "chart gallery";
+  }
 }
 .home__main .h1 {
   margin: 10px 0px;
@@ -32,32 +54,56 @@ body {
 .home__main .indicaciones {
   margin: 10px 0px;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   font-family: var(--font);
+  text-align: center;
+  grid-area: indicaciones;
 }
 .home__main .datos {
+  list-style: none;
   margin: 10px 0px;
   font-size: 20px;
   text-align: left;
   font-family: var(--font);
+  font-size: 16px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(3, 25px);
   justify-items: center;
   line-height: 1.5;
   margin: 25px auto 35px auto;
+  grid-area: datos;
+}
+@media (min-width: 450px) {
+  .home__main .datos {
+    font-size: 20px;
+  }
+}
+.home__main .mujeres, .home__main .varones, .home__main .presentes {
+  font-weight: bold;
 }
 .home__main .gallery {
   width: 100%;
   margin-top: 25px;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 120px));
+  grid-template-columns: repeat(auto-fit, minmax(90px, 100px));
   grid-gap: 25px;
+  grid-area: gallery;
 }
 @media (min-width: 450px) {
   .home__main .gallery {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 220px));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 140px));
+  }
+}
+@media (min-width: 700px) {
+  .home__main .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 170px));
+  }
+}
+@media (min-width: 1000px) {
+  .home__main .gallery {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 190px));
   }
 }
 .home__main .gallery .card {
@@ -73,20 +119,16 @@ body {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 100%;
-  filter: grayscale(1);
-  border: solid 11px rgb(0 0 0 / 7%);
-}
-.home__main .gallery .card .imagen:hover {
-  filter: grayscale(0);
-  box-shadow: 0px 0px 7px -5px rgba(133,148,163);
+  filter: saturate(0.3);
+  border: solid 2px rgba(0, 0, 0, 0.3333333333);
 }
 .home__main .gallery .card .check {
-  filter: grayscale(0);
-  border: solid 11px var(--bg-primary);
-  box-shadow: 0px 0px 7px -5px #a39d85;
+  filter: saturate(1);
+  border: solid 2px var(--bg-primary);
 }
 .home__main .gallery .card .description {
   font-family: var(--font-card);
+  font-weight: bold;
   text-align: center;
   font-size: 0.8rem;
   color: var(--color-text);
@@ -95,40 +137,22 @@ body {
   font-size: 1.2rem;
   color: var(--bg-primary);
 }
-.home__main .gallery .card .description .present {  
-  font-weight: bold;  
-}
 
 .chart {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 500px;
-  margin: 5rem auto;  
+  max-width: 280px;
+  margin: auto;
+  margin-bottom: 25px;
+  grid-area: chart;
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-:root {
-  --font: "Lato", sans-serif;
-  --font-card: "Noto Sans", sans-serif;
-  --bg-primary: #eed269;
-  --bg-secundary: #fff;
-  --color-text: #28292c;
-  --mobile: 450px;
-  --mini-tablet: 700px;
-  --tablet:1000px;
-  --latop:1200px;
-}
-
-.app {
-  font-family: var(--font);
-  color: var(--color-text);
+@media (min-width: 700px) {
+  .chart {
+    margin: 30px 10px;
+    max-width: 350px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

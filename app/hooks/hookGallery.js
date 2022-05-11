@@ -9,6 +9,11 @@ const hookGallery = (idGallery)=> {
     let caballeros = []
     let damas = []
     
+    const idCanva = Charts().dataset.id
+    setTimeout(()=>{
+        hookGrafica(idCanva, '0','0')
+    },500)
+
     d.getElementById(`${idGallery}`).addEventListener('click', (e)=>{   
 console.log(e);
         console.log(e.target.tagName)
@@ -45,7 +50,6 @@ console.log(e);
                 hombres.textContent = `Varones: ${caballeros.length}`
                 mujeres.textContent = `Mujeres: ${damas.length}`
 
-                const idCanva = Charts().dataset.id
                 hookGrafica(idCanva, `${caballeros.length}`,`${damas.length}`)
             } else {               
                 Swal.fire({
@@ -77,6 +81,8 @@ console.log(e);
                         presentes.textContent = `Presentes: ${registro.length}`
                         hombres.textContent = `Varones: ${caballeros.length}`
                         mujeres.textContent = `Mujeres: ${damas.length}`
+                      
+                        hookGrafica(idCanva, `${caballeros.length}`,`${damas.length}`)
                     }
                   })
             }

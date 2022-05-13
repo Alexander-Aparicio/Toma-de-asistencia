@@ -1,25 +1,27 @@
 import createElement from "../../helpers/createElement.js"
 
-const Card = (infoCard={img, nombre, state, id, gender})=> {
+const Card = (infoCard)=> {
+
+    const {img, nombre, state, id, gender} = infoCard
 
     const card = createElement('figure','card')
 
-    const img = createElement('img','imagen')
-    img.setAttribute('src', infoCard.img)
-    img.setAttribute('alt', infoCard.nombre)
-    img.setAttribute('id', `${infoCard.id}`)
+    const Img = createElement('img','imagen')
+    Img.setAttribute('src', img)
+    Img.setAttribute('alt', nombre)
+    Img.setAttribute('id', `${id}`)
 
     const description = createElement('figcaption', `description`)
     const name = createElement('h2','h2')
-    name.textContent = `${infoCard.nombre}`
+    name.textContent = `${nombre}`
 
-    const state = createElement('p',`state ${infoCard.id} ${infoCard.gender}` )
-    state.textContent = infoCard.state
+    const State = createElement('p',`state ${id} ${gender}` )
+    State.textContent = state
 
     description.appendChild(name)
-    description.appendChild(state)
+    description.appendChild(State)
     
-    card.appendChild(img)
+    card.appendChild(Img)
     card.appendChild(description)
 
     return card 

@@ -11,15 +11,25 @@ const Gallery = ()=> {
     gallery.setAttribute('id','gallery')
     const fragment = document.createDocumentFragment()
 
+    class Infobasica {
+        constructor(nombre,img,gender,state,id){
+            this.nombre = nombre,
+            this.img = img,
+            this.gender = gender,
+            this.state = state,
+            this.id = id 
+        }
+    }
+
     alumnos.forEach( ( alumno )=> {
 
-        const infoCard = {
-            img:alumno.foto,
-            nombre:alumno.name,
-            state: alumno.state,
-            id:alumno.id,
-            gender:alumno.gender
-        }
+        const infoCard = new Infobasica(
+            alumno.name,
+            alumno.foto,
+            alumno.gender,
+            alumno.state,
+            alumno.id,
+        )
 
         const card = Card(infoCard)
 

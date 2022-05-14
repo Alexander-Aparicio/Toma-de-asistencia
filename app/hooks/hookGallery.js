@@ -2,12 +2,12 @@ import Charts from "../components/home/Charts.js"
 import alumnosDb from "../data/db.js"
 import hookGrafica from "../helpers/hookGrafica.js"
 
-const hookGallery = (idGallery)=> {
+const d = document
+let registro = []
+let caballeros = []
+let damas = []
 
-    const d = document
-    let registro = []
-    let caballeros = []
-    let damas = []
+const hookGallery = (idGallery)=> {
     
     const idCanva = Charts().dataset.id
     setTimeout(()=>{
@@ -15,8 +15,6 @@ const hookGallery = (idGallery)=> {
     },500)
 
     d.getElementById(`${idGallery}`).addEventListener('click', (e)=>{   
-console.log(e);
-        console.log(e.target.tagName)
 
         if( e.target.tagName === 'IMG' ) {
 
@@ -50,7 +48,9 @@ console.log(e);
                 hombres.textContent = `Varones: ${caballeros.length}`
                 mujeres.textContent = `Mujeres: ${damas.length}`
 
-                hookGrafica(idCanva, `${caballeros.length}`,`${damas.length}`)
+                hookGrafica(idCanva, `${caballeros.length}`,`${damas.length}`) 
+                        
+                
             } else {               
                 Swal.fire({
                     title: 'Desea volver a su estado Ausente?',
@@ -86,7 +86,9 @@ console.log(e);
                     }
                   })
             }
-        }
+        }        
+
+          
      
     })
 

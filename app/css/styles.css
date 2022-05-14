@@ -42,7 +42,7 @@
 @media (min-width: 700px) {
   .home__main {
     grid-template-columns: 1fr 3fr;
-    grid-template-areas: "indicaciones indicaciones" "datos datos" "chart gallery" "chart gallery";
+    grid-template-areas: "title title" "indicaciones indicaciones" "datos datos" "chart gallery" "lista gallery";
   }
 }
 .home__main .h1 {
@@ -50,6 +50,7 @@
   font-size: 30px;
   text-align: center;
   font-family: var(--font);
+  grid-area: title;
 }
 .home__main .indicaciones {
   margin: 10px 0px;
@@ -153,6 +154,23 @@
     margin: 30px 10px;
     max-width: 350px;
   }
+}
+
+.listado {
+  grid-area: lista;
+}
+.listado .title-lista {
+  margin: 10px 0px;
+  font-size: 30px;
+  text-align: center;
+  font-family: var(--font);
+  margin-top: 20px;
+}
+.listado .li {
+  margin: 10px 0px;
+  font-size: 20px;
+  text-align: left;
+  font-family: var(--font);
 }
 
 /*# sourceMappingURL=styles.css.map */

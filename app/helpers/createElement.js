@@ -8,7 +8,6 @@ const createElement = ( el='', clase='')=> {
     } else {
         console.error('Debe ingresar como parametros la etiqueta HTML a crear y su clase para los estilos')
     }
-    
 }
 
 export default createElement

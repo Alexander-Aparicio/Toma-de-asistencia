@@ -1,6 +1,7 @@
 import Charts from "../components/home/Charts.js"
 import Gallery from "../components/home/Gallery.js"
 import Info from "../components/home/Info.js"
+import InvitadosEspeciales from "../components/home/InvitadosEspeciales.js"
 import Text from "../components/home/Text.js"
 import Title from "../components/home/Title.js"
 import hookGallery from "../hooks/hookGallery.js"
@@ -14,7 +15,7 @@ const Home = ()=> {
     main.setAttribute('class','home__main')
 
     webSite.appendChild(main)
-    /* main.appendChild(Title()) */
+    main.appendChild(Title())
     main.appendChild(Text())
     main.appendChild(Info())
     main.appendChild(Gallery())
@@ -23,7 +24,7 @@ const Home = ()=> {
     hookGallery(idGallery)
 
     main.appendChild(Charts())
-
+    main.appendChild(InvitadosEspeciales())
 }
 
 export default Home 

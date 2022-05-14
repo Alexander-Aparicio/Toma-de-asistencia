@@ -30,7 +30,9 @@
 .header .name {
   color: var(--color-text);
   font-weight: bold;
+  font-size: 30px;
 }
+
 
 .home__main {
   padding: 25px 6%;
@@ -38,6 +40,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "indicaciones" "datos" "chart" "gallery";
+  background: rgb(115,117,117);
+background: linear-gradient(0deg, rgba(115,117,117,1) 0%, rgba(223,231,231,1) 85%);
 }
 @media (min-width: 700px) {
   .home__main {
@@ -52,12 +56,24 @@
   font-family: var(--font);
   grid-area: title;
 }
+
+
+.home__main .imagen.check:hover{
+  box-shadow: -20px -25px 31px -19px rgba(245,90,111,1);
+  transition: all(transition);
+}
+.home__main .imagen:hover{
+  box-shadow: -20px -25px 31px -19px rgba(0,255,68,1);
+}
+
 .home__main .indicaciones {
   margin: 10px 0px;
   font-size: 20px;
   text-align: left;
   font-family: var(--font);
   text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
   grid-area: indicaciones;
 }
 .home__main .datos {
@@ -147,7 +163,8 @@
   max-width: 280px;
   margin: auto;
   margin-bottom: 25px;
-  grid-area: chart;
+  grid-area: chart
+ 
 }
 @media (min-width: 700px) {
   .chart {

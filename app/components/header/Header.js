@@ -1,6 +1,5 @@
 
 const Header = ()=>{
-    console.log('hola mundo')
     const d = document
     const webSite = d.getElementById('app')
     const header = d.createElement('header')
